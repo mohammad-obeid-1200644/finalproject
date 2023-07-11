@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string-array name="subject">
+        <item>Merador hotel</item>
+        <item>Casablanca hotel</item>
+        <item>Royal cort hotel</item>
+        <item>Melenoem hotel</item>
+        <item>Grand park hotel</item>
+        <item>Karmel hotel</item>
+
+    </string-array>
+</resources>

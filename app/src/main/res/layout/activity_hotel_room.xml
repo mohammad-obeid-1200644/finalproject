@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/andback"
+    tools:context=".hotelRoom"
+    android:layout_margin="20dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ser"
+        android:textStyle="bold"
+        android:background="#38ffffff"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="Search for Rooms!"
+        android:id="@+id/ser"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welctxt"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Welcome to // hotel"
+        android:textSize="15dp"
+
+        android:layout_below="@+id/ser"
+
+        android:background="#38ffffff"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+
+
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roomnum"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="This is room number //"
+        android:layout_below="@+id/welctxt"
+        android:layout_alignParentLeft="true"
+        android:background="#38ffffff"
+        android:drawablePadding="20dp"
+        android:padding="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pric"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="The pice/night is /./"
+        android:layout_below="@+id/roomnum"
+        android:background="#38ffffff"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/from"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="From Date: "
+        android:layout_below="@+id/pric"
+        android:layout_alignParentLeft="true"
+        android:background="#38ffffff"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+        />
+    <DatePicker
+        android:id="@+id/simpleDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:layout_below="@+id/from"
+        android:background="#38ffffff"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/To"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="To Date: "
+        android:layout_below="@+id/simpleDatePicker"
+        android:background="#38ffffff"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+        />
+    <DatePicker
+        android:id="@+id/simpleDatePicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:layout_below="@+id/To"
+        android:background="#38ffffff"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpleDatePicker2"
+        android:onClick="Reserve"
+        android:textStyle="bold"
+        android:background="#38ffffff"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="Reserve This Room!"
+        android:id="@+id/reserve"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reserve"
+        android:onClick="regenerate"
+        android:textStyle="bold"
+        android:background="#38ffffff"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="Show next Room"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/rege"
+        />
+</RelativeLayout>
+</ScrollView>

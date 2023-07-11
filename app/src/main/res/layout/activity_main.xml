@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/andback"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/maintxt"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Welcome to our hotels app!"
+        android:textSize="40dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:layout_below="@+id/maintxt"
+        android:layout_margin="10dp"
+        android:background="#38ffffff"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:layout_below="@+id/userName"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="#38ffffff"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/padlock"
+        android:textSize="15dp"
+        android:inputType="textPassword"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/password"
+        android:id="@+id/linlayout"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnOnclick"
+            android:id="@+id/login2"
+            android:text="log in"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:background="#38ffffff"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            />
+        <Button
+            android:id="@+id/signUpLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:onClick="openSignUpActivity"
+
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:background="#38ffffff"
+            android:drawablePadding="20dp"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anothid"
+        android:text="Another methods to sign in"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/linlayout"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/anothersignmethods"
+        android:layout_below="@+id/anothid"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/google"
+            android:id="@+id/googlebtn"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/gmail"
+            android:id="@+id/gmailbtn"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/facebook"
+            android:id="@+id/facebookbtn"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
